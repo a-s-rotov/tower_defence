@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Permissions;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
@@ -8,7 +9,7 @@ public class Spawner : MonoBehaviour
     public float spawnTime = 1f;
 
     private float timer = 0;
-    
+
     void Start()
     {
 
