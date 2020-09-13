@@ -1,18 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Permissions;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-    // Start is called before the first frame update
+    public gameObject SpawnObject;
+    public float spawnTime = 1f;
+    private float timer = 0;
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        spawnTime -= Time.deltaTime;
+        if (spawnTime <= 0)
     }
 }
